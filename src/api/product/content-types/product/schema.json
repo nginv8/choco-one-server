@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "discount": {
+      "type": "integer",
+      "max": 100,
+      "min": 0
+    },
+    "shortDescription": {
+      "type": "text",
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "available": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "oldPrice": {
+      "type": "decimal"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "longDescriptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::long-description.long-description"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "EUR",
+        "UAH",
+        "USD",
+        "CAD"
+      ],
+      "required": true,
+      "default": "EUR"
+    },
+    "optionSets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::options-set.options-set",
+      "inversedBy": "products"
+    }
+  }
+}

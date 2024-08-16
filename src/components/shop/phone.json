@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shop_phones",
+  "info": {
+    "displayName": "phone",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "phone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

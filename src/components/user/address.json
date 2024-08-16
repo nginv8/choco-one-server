@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_user_addresses",
+  "info": {
+    "displayName": "address",
+    "icon": "earth",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "selected": {
+      "type": "boolean",
+      "default": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    }
+  }
+}

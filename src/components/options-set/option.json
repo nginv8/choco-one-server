@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_parameters_options",
+  "info": {
+    "displayName": "option",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "default": 0,
+      "min": 0
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "available": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

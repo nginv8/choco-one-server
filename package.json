@@ -1,0 +1,47 @@
+{
+  "name": "choco-one-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "cross-env NODE_ENV=production strapi start",
+    "build": "cross-env NODE_ENV=production strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.1.1",
+    "@strapi/plugin-cloud": "4.24.4",
+    "@strapi/plugin-i18n": "4.24.4",
+    "@strapi/plugin-users-permissions": "4.24.4",
+    "@strapi/provider-email-nodemailer": "^4.25.5",
+    "@strapi/provider-upload-cloudinary": "^4.25.5",
+    "@strapi/strapi": "4.24.4",
+    "better-sqlite3": "8.6.0",
+    "decimal.js": "^10.4.3",
+    "google-auth-library": "^9.12.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-react-icons": "^0.3.1",
+    "styled-components": "5.3.3",
+    "yup": "1.0.0-alpha.3"
+  },
+  "author": {
+    "name": "nginv8"
+  },
+  "strapi": {
+    "uuid": "efd38509-29f4-4ca9-85d8-7a971c45262f"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/pg": "^8",
+    "cross-env": "^7.0.3",
+    "pg": "^8.11.5"
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+}

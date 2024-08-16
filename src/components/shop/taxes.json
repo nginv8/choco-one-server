@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shop_taxes",
+  "info": {
+    "displayName": "tax",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "value": {
+      "type": "decimal",
+      "required": true,
+      "default": 0,
+      "min": 0
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "fixed",
+        "percent"
+      ],
+      "required": true
+    }
+  }
+}

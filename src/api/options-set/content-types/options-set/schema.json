@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "options_sets",
+  "info": {
+    "singularName": "options-set",
+    "pluralName": "options-sets",
+    "displayName": "Option Set",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "descriptionPrivate": {
+      "type": "string",
+      "private": true,
+      "unique": true,
+      "required": true
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "options-set.option",
+      "required": true
+    },
+    "title": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::option-set-name.option-set-name",
+      "inversedBy": "optionSets"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "optionSets"
+    }
+  }
+}

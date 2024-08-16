@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_order_selected_option",
+  "info": {
+    "displayName": "order selected option",
+    "icon": "options",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "optionSetId": {
+      "type": "integer",
+      "required": true
+    },
+    "optionSetName": {
+      "type": "string",
+      "required": true
+    },
+    "optionId": {
+      "type": "integer",
+      "required": true
+    },
+    "optionName": {
+      "type": "string",
+      "required": false
+    },
+    "optionPrice": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

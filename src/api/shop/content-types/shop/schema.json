@@ -1,0 +1,78 @@
+{
+  "kind": "singleType",
+  "collectionName": "shops",
+  "info": {
+    "singularName": "shop",
+    "pluralName": "shops",
+    "displayName": "Shop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "EUR",
+        "UAH",
+        "USD",
+        "CAD"
+      ],
+      "required": true,
+      "default": "EUR"
+    },
+    "taxes": {
+      "displayName": "taxes",
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.taxes"
+    },
+    "delivery": {
+      "displayName": "Delivery",
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.delivery"
+    },
+    "phones": {
+      "displayName": "Phone",
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.phone"
+    },
+    "emails": {
+      "displayName": "Email",
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "workingHours": {
+      "type": "text"
+    },
+    "socialMedia": {
+      "displayName": "SocialMedia",
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.social-media"
+    },
+    "copyRight": {
+      "type": "string"
+    },
+    "payment": {
+      "displayName": "payment",
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.payment"
+    }
+  }
+}

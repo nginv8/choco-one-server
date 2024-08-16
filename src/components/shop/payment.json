@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shop_payments",
+  "info": {
+    "displayName": "payment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

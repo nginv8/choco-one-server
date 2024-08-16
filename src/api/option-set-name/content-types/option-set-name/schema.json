@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "option_set_names",
+  "info": {
+    "singularName": "option-set-name",
+    "pluralName": "option-set-names",
+    "displayName": "Options Set Title",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "optionSets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::options-set.options-set",
+      "mappedBy": "title"
+    }
+  }
+}

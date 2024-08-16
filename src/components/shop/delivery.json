@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shop_deliveries",
+  "info": {
+    "displayName": "delivery",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "default": 0,
+      "min": 0
+    }
+  }
+}

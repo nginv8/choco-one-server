@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supports",
+  "info": {
+    "singularName": "support",
+    "pluralName": "supports",
+    "displayName": "Support",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "Open",
+        "Pending",
+        "Resolved",
+        "Closed",
+        "Reopened",
+        "In Progress",
+        "On Hold",
+        "Cancelled"
+      ],
+      "default": "New"
+    },
+    "theme": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "supportMessages"
+    }
+  }
+}

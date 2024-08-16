@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shop_emails",
+  "info": {
+    "displayName": "email",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}
